@@ -98,7 +98,9 @@ enum AppErr: Error {
             self.log.error("testBatchProvider: \(testBatchProvider.count)")
 
             let dataLoader = MLDataLoader(trainBatchProvider: trainBatchProvider, testBatchProvider: testBatchProvider)
-            let url = URL(fileURLWithPath: modelDir)
+            guard let url = Bundle.main.url(forResource: "MNIST_Model", withExtension: "mlmodel") else {
+                throw AppErr.ModelNotFound
+            }
             self.log.error("Accessing: \(url.startAccessingSecurityScopedResource())")
             self.log.error("Model URL: \(url).")
             try self.checkModel(url)
