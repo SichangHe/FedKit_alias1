@@ -19,6 +19,7 @@ func updateModelAsync(forModelAt: URL, trainingData: MLBatchProvider, configurat
             completionHandler: completionHandler
         )
         do {
+            // TODO: This fails.
             let updateTask = try MLUpdateTask(
                 forModelAt: forModelAt, trainingData: trainingData, configuration: configuration, progressHandlers: progressHandlers
             )
