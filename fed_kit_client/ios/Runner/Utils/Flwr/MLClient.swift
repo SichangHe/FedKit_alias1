@@ -66,9 +66,24 @@ public class MLClient {
             guard let weightsMultiArray = try updateContext.model.parameterValue(for: paramKey) as? MLMultiArray else {
                 throw MLClientErr.ParamNotMultiArray
             }
+            log.error("layer \(layer.name): \(weightsMultiArray.shape)")
             return weightsMultiArray
         }
         try saveModel(updateContext)
+        try await testImmediatelyAssignParams()
+    }
+
+    func testImmediatelyAssignParams() async throws {
+        let config = try await config()
+        for (index, param) in parameters!.enumerated() {
+            let name = layers[index].name
+            let paramKey = MLParameterKey.weights.scoped(to: name)
+            config.parameters![paramKey] = param
+            log.error("layer \(name): \(param.shape)")
+        }
+        _ = try await updateModelAsync(
+            forModelAt: compiledModelUrl, trainingData: dataLoader.trainBatchProvider, configuration: config
+        )
     }
 
     func evaluate() async throws -> (Double, Double) {
