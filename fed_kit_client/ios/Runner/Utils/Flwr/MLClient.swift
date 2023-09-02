@@ -21,6 +21,7 @@ enum MLClientErr: Error {
     case NoParamUpdate
     case ParamsNil
     case ParamNotMultiArray
+    case UpdateParamShapeMismatch(Int, Int)
 }
 
 public class MLClient {
@@ -30,6 +31,8 @@ public class MLClient {
     var compiledModelUrl: URL
     var tempModelUrl: URL
     private var paramUpdate: [[Float]]?
+
+    let log = logger(String(describing: MLClient.self))
 
     init(_ layers: [Layer], _ dataLoader: MLDataLoader, _ compiledModelUrl: URL) {
         self.layers = layers
@@ -69,6 +72,7 @@ public class MLClient {
             }
             return weightsMultiArray
         }
+        logMLMultiArrayShapes(array: parameters!)
         try saveModel(updateContext)
     }
 
@@ -88,16 +92,40 @@ public class MLClient {
         if config.parameters == nil {
             config.parameters = [:]
         }
+        var mlMultiArrays = [MLMultiArray]()
         if let paramUpdate {
             for (index, weightsArray) in paramUpdate.enumerated() {
-                let shapedArray = MLShapedArray(scalars: weightsArray, shape: layers[index].shape)
-                let layerParams = MLMultiArray(shapedArray)
-                let paramKey = MLParameterKey.weights.scoped(to: layers[index].name)
-                config.parameters![paramKey] = layerParams
+                let layer = layers[index]
+                let mlMultiArray = try makeMlMultiArray(layer, weightsArray)
+                mlMultiArrays.append(mlMultiArray)
+                let paramKey = MLParameterKey.weights.scoped(to: layer.name)
+                config.parameters![paramKey] = mlMultiArray
             }
             self.paramUpdate = nil
         }
+        logMLMultiArrayShapes(array: mlMultiArrays)
         return config
+    }
+
+    private func validateLayerShape(_ layer: Layer, _ weightsArray: [Float]) throws {
+        let expectedShape = layer.shape.reduce(1, *)
+        if expectedShape != weightsArray.count {
+            throw MLClientErr.UpdateParamShapeMismatch(expectedShape, weightsArray.count)
+        }
+    }
+
+    private func makeMlMultiArray(_ layer: Layer, _ weightsArray: [Float]) throws -> MLMultiArray {
+        try validateLayerShape(layer, weightsArray)
+        var array = try MLMultiArray(shape: layer.shape as [NSNumber], dataType: .float)
+        for (index, param) in weightsArray.enumerated() {
+            array[index] = param as NSNumber
+        }
+        return array
+    }
+
+    private func logMLMultiArrayShapes(array: [MLMultiArray]) {
+        let parameterShape = array.map { $0.shape }
+        log.error("MLClient: MLMultiArray shapes: \(parameterShape)")
     }
 
     private func saveModel(_ updateContext: MLUpdateContext) throws {
