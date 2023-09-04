@@ -61,28 +61,22 @@ public class MLClient {
         let updateContext = try await updateModelAsync(
             forModelAt: compiledModelUrl, trainingData: dataLoader.trainBatchProvider, configuration: config
         )
+        let newConfig = MLModelConfiguration()
+        if newConfig.parameters == nil {
+            newConfig.parameters = [:]
+        }
         parameters = try layers.map { layer in
             let paramKey = MLParameterKey.weights.scoped(to: layer.name)
             guard let weightsMultiArray = try updateContext.model.parameterValue(for: paramKey) as? MLMultiArray else {
                 throw MLClientErr.ParamNotMultiArray
             }
             log.error("layer \(layer.name): \(weightsMultiArray.shape)")
+            newConfig.parameters![paramKey] = weightsMultiArray
             return weightsMultiArray
         }
         try saveModel(updateContext)
-        try await testImmediatelyAssignParams()
-    }
-
-    func testImmediatelyAssignParams() async throws {
-        let config = try await config()
-        for (index, param) in parameters!.enumerated() {
-            let name = layers[index].name
-            let paramKey = MLParameterKey.weights.scoped(to: name)
-            config.parameters![paramKey] = param
-            log.error("layer \(name): \(param.shape)")
-        }
         _ = try await updateModelAsync(
-            forModelAt: compiledModelUrl, trainingData: dataLoader.trainBatchProvider, configuration: config
+            forModelAt: compiledModelUrl, trainingData: dataLoader.trainBatchProvider, configuration: newConfig
         )
     }
 
@@ -103,6 +97,7 @@ public class MLClient {
             config.parameters = [:]
         }
         if let paramUpdate {
+            log.error("MLClient.config: applying paramUpdate.")
             let parameters = try await parameters()
             log.error("MLClient: parameters shapes: \(parameters.map { $0.shape }).")
             for (index, weightsArray) in paramUpdate.enumerated() {
