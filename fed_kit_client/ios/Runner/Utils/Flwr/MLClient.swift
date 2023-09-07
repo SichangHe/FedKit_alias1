@@ -7,6 +7,7 @@
 //
 
 import CoreML
+import CoreMLProto
 import Foundation
 import NIOCore
 import NIOPosix

@@ -5,6 +5,7 @@
 //  Created by Daniel Nugraha on 16.03.22.
 //
 
+import CoreMLProto
 import Foundation
 
 struct MLModelInspect {

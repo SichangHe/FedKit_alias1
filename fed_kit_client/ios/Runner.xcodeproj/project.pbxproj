@@ -20,43 +20,10 @@
 		3F4AFE432A906BAF004B55C8 /* NIOCore in Frameworks */ = {isa = PBXBuildFile; productRef = 3F4AFE422A906BAF004B55C8 /* NIOCore */; };
 		3F4AFE452A906BAF004B55C8 /* NIOPosix in Frameworks */ = {isa = PBXBuildFile; productRef = 3F4AFE442A906BAF004B55C8 /* NIOPosix */; };
 		3F4AFE4B2A909646004B55C8 /* MLModelInspect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AFE4A2A909646004B55C8 /* MLModelInspect.swift */; };
-		3F4AFE772A90977B004B55C8 /* Scaler.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AFE552A909778004B55C8 /* Scaler.pb.swift */; };
-		3F4AFE782A90977B004B55C8 /* AudioFeaturePrint.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AFE562A909778004B55C8 /* AudioFeaturePrint.pb.swift */; };
-		3F4AFE792A90977B004B55C8 /* DataStructures.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AFE572A909779004B55C8 /* DataStructures.pb.swift */; };
-		3F4AFE7A2A90977B004B55C8 /* FeatureTypes.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AFE582A909779004B55C8 /* FeatureTypes.pb.swift */; };
-		3F4AFE7B2A90977B004B55C8 /* ItemSimilarityRecommender.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AFE592A909779004B55C8 /* ItemSimilarityRecommender.pb.swift */; };
-		3F4AFE7C2A90977B004B55C8 /* MIL.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AFE5A2A909779004B55C8 /* MIL.pb.swift */; };
-		3F4AFE7D2A90977B004B55C8 /* BayesianProbitRegressor.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AFE5B2A909779004B55C8 /* BayesianProbitRegressor.pb.swift */; };
-		3F4AFE7E2A90977B004B55C8 /* VisionFeaturePrint.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AFE5C2A909779004B55C8 /* VisionFeaturePrint.pb.swift */; };
-		3F4AFE7F2A90977B004B55C8 /* WordTagger.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AFE5D2A909779004B55C8 /* WordTagger.pb.swift */; };
-		3F4AFE802A90977B004B55C8 /* Gazetteer.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AFE5E2A909779004B55C8 /* Gazetteer.pb.swift */; };
-		3F4AFE812A90977B004B55C8 /* TextClassifier.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AFE5F2A909779004B55C8 /* TextClassifier.pb.swift */; };
-		3F4AFE822A90977B004B55C8 /* WordEmbedding.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AFE602A909779004B55C8 /* WordEmbedding.pb.swift */; };
-		3F4AFE832A90977B004B55C8 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3F4AFE612A909779004B55C8 /* LICENSE.txt */; };
-		3F4AFE842A90977B004B55C8 /* TreeEnsemble.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AFE622A909779004B55C8 /* TreeEnsemble.pb.swift */; };
-		3F4AFE852A90977B004B55C8 /* Imputer.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AFE632A909779004B55C8 /* Imputer.pb.swift */; };
-		3F4AFE862A90977B004B55C8 /* ArrayFeatureExtractor.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AFE642A90977A004B55C8 /* ArrayFeatureExtractor.pb.swift */; };
-		3F4AFE872A90977B004B55C8 /* Identity.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AFE652A90977A004B55C8 /* Identity.pb.swift */; };
-		3F4AFE882A90977B004B55C8 /* NearestNeighbors.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AFE662A90977A004B55C8 /* NearestNeighbors.pb.swift */; };
-		3F4AFE892A90977B004B55C8 /* Model.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AFE672A90977A004B55C8 /* Model.pb.swift */; };
-		3F4AFE8A2A90977B004B55C8 /* CustomModel.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AFE682A90977A004B55C8 /* CustomModel.pb.swift */; };
-		3F4AFE8B2A90977B004B55C8 /* GLMClassifier.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AFE692A90977A004B55C8 /* GLMClassifier.pb.swift */; };
-		3F4AFE8C2A90977B004B55C8 /* CategoricalMapping.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AFE6A2A90977A004B55C8 /* CategoricalMapping.pb.swift */; };
-		3F4AFE8D2A90977B004B55C8 /* NeuralNetwork.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AFE6B2A90977A004B55C8 /* NeuralNetwork.pb.swift */; };
-		3F4AFE8E2A90977B004B55C8 /* Normalizer.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AFE6C2A90977A004B55C8 /* Normalizer.pb.swift */; };
-		3F4AFE8F2A90977B004B55C8 /* Parameters.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AFE6D2A90977A004B55C8 /* Parameters.pb.swift */; };
-		3F4AFE902A90977B004B55C8 /* NonMaximumSuppression.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AFE6E2A90977A004B55C8 /* NonMaximumSuppression.pb.swift */; };
-		3F4AFE912A90977B004B55C8 /* README.rst in Resources */ = {isa = PBXBuildFile; fileRef = 3F4AFE6F2A90977A004B55C8 /* README.rst */; };
-		3F4AFE922A90977B004B55C8 /* GLMRegressor.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AFE702A90977A004B55C8 /* GLMRegressor.pb.swift */; };
-		3F4AFE932A90977B004B55C8 /* OneHotEncoder.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AFE712A90977A004B55C8 /* OneHotEncoder.pb.swift */; };
-		3F4AFE942A90977B004B55C8 /* SoundAnalysisPreprocessing.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AFE722A90977B004B55C8 /* SoundAnalysisPreprocessing.pb.swift */; };
-		3F4AFE952A90977B004B55C8 /* FeatureVectorizer.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AFE732A90977B004B55C8 /* FeatureVectorizer.pb.swift */; };
-		3F4AFE962A90977B004B55C8 /* DictVectorizer.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AFE742A90977B004B55C8 /* DictVectorizer.pb.swift */; };
-		3F4AFE972A90977B004B55C8 /* LinkedModel.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AFE752A90977B004B55C8 /* LinkedModel.pb.swift */; };
-		3F4AFE982A90977B004B55C8 /* SVM.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4AFE762A90977B004B55C8 /* SVM.pb.swift */; };
 		3F4AFE9E2A909E77004B55C8 /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = 3F4AFE9D2A909E77004B55C8 /* SwiftProtobuf */; };
 		3F8854212A90A52200B37487 /* MLFlwrClientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8854202A90A52200B37487 /* MLFlwrClientModel.swift */; };
 		3F8854242A90A53400B37487 /* MLClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8854232A90A53400B37487 /* MLClient.swift */; };
+		3F936A2A2AA97464002496C5 /* CoreMLProto in Frameworks */ = {isa = PBXBuildFile; productRef = 3F936A292AA97464002496C5 /* CoreMLProto */; };
 		74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
@@ -102,40 +69,6 @@
 		3F33794B2A91F6EF0084B7C8 /* MNIST_train.csv.lzfse */ = {isa = PBXFileReference; lastKnownFileType = file; path = MNIST_train.csv.lzfse; sourceTree = "<group>"; };
 		3F4AFE3D2A90656F004B55C8 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		3F4AFE4A2A909646004B55C8 /* MLModelInspect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLModelInspect.swift; sourceTree = "<group>"; };
-		3F4AFE552A909778004B55C8 /* Scaler.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scaler.pb.swift; sourceTree = "<group>"; };
-		3F4AFE562A909778004B55C8 /* AudioFeaturePrint.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioFeaturePrint.pb.swift; sourceTree = "<group>"; };
-		3F4AFE572A909779004B55C8 /* DataStructures.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStructures.pb.swift; sourceTree = "<group>"; };
-		3F4AFE582A909779004B55C8 /* FeatureTypes.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureTypes.pb.swift; sourceTree = "<group>"; };
-		3F4AFE592A909779004B55C8 /* ItemSimilarityRecommender.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemSimilarityRecommender.pb.swift; sourceTree = "<group>"; };
-		3F4AFE5A2A909779004B55C8 /* MIL.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIL.pb.swift; sourceTree = "<group>"; };
-		3F4AFE5B2A909779004B55C8 /* BayesianProbitRegressor.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BayesianProbitRegressor.pb.swift; sourceTree = "<group>"; };
-		3F4AFE5C2A909779004B55C8 /* VisionFeaturePrint.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisionFeaturePrint.pb.swift; sourceTree = "<group>"; };
-		3F4AFE5D2A909779004B55C8 /* WordTagger.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordTagger.pb.swift; sourceTree = "<group>"; };
-		3F4AFE5E2A909779004B55C8 /* Gazetteer.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gazetteer.pb.swift; sourceTree = "<group>"; };
-		3F4AFE5F2A909779004B55C8 /* TextClassifier.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextClassifier.pb.swift; sourceTree = "<group>"; };
-		3F4AFE602A909779004B55C8 /* WordEmbedding.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordEmbedding.pb.swift; sourceTree = "<group>"; };
-		3F4AFE612A909779004B55C8 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		3F4AFE622A909779004B55C8 /* TreeEnsemble.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeEnsemble.pb.swift; sourceTree = "<group>"; };
-		3F4AFE632A909779004B55C8 /* Imputer.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Imputer.pb.swift; sourceTree = "<group>"; };
-		3F4AFE642A90977A004B55C8 /* ArrayFeatureExtractor.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayFeatureExtractor.pb.swift; sourceTree = "<group>"; };
-		3F4AFE652A90977A004B55C8 /* Identity.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identity.pb.swift; sourceTree = "<group>"; };
-		3F4AFE662A90977A004B55C8 /* NearestNeighbors.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearestNeighbors.pb.swift; sourceTree = "<group>"; };
-		3F4AFE672A90977A004B55C8 /* Model.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.pb.swift; sourceTree = "<group>"; };
-		3F4AFE682A90977A004B55C8 /* CustomModel.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomModel.pb.swift; sourceTree = "<group>"; };
-		3F4AFE692A90977A004B55C8 /* GLMClassifier.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLMClassifier.pb.swift; sourceTree = "<group>"; };
-		3F4AFE6A2A90977A004B55C8 /* CategoricalMapping.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoricalMapping.pb.swift; sourceTree = "<group>"; };
-		3F4AFE6B2A90977A004B55C8 /* NeuralNetwork.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeuralNetwork.pb.swift; sourceTree = "<group>"; };
-		3F4AFE6C2A90977A004B55C8 /* Normalizer.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Normalizer.pb.swift; sourceTree = "<group>"; };
-		3F4AFE6D2A90977A004B55C8 /* Parameters.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameters.pb.swift; sourceTree = "<group>"; };
-		3F4AFE6E2A90977A004B55C8 /* NonMaximumSuppression.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonMaximumSuppression.pb.swift; sourceTree = "<group>"; };
-		3F4AFE6F2A90977A004B55C8 /* README.rst */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.rst; sourceTree = "<group>"; };
-		3F4AFE702A90977A004B55C8 /* GLMRegressor.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLMRegressor.pb.swift; sourceTree = "<group>"; };
-		3F4AFE712A90977A004B55C8 /* OneHotEncoder.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneHotEncoder.pb.swift; sourceTree = "<group>"; };
-		3F4AFE722A90977B004B55C8 /* SoundAnalysisPreprocessing.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundAnalysisPreprocessing.pb.swift; sourceTree = "<group>"; };
-		3F4AFE732A90977B004B55C8 /* FeatureVectorizer.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureVectorizer.pb.swift; sourceTree = "<group>"; };
-		3F4AFE742A90977B004B55C8 /* DictVectorizer.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictVectorizer.pb.swift; sourceTree = "<group>"; };
-		3F4AFE752A90977B004B55C8 /* LinkedModel.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedModel.pb.swift; sourceTree = "<group>"; };
-		3F4AFE762A90977B004B55C8 /* SVM.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVM.pb.swift; sourceTree = "<group>"; };
 		3F8854202A90A52200B37487 /* MLFlwrClientModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLFlwrClientModel.swift; sourceTree = "<group>"; };
 		3F8854232A90A53400B37487 /* MLClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLClient.swift; sourceTree = "<group>"; };
 		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -168,6 +101,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F4AFE432A906BAF004B55C8 /* NIOCore in Frameworks */,
+				3F936A2A2AA97464002496C5 /* CoreMLProto in Frameworks */,
 				3F4AFE452A906BAF004B55C8 /* NIOPosix in Frameworks */,
 				2ACDCD0051D8B4D2CCD15559 /* Pods_Runner.framework in Frameworks */,
 				3F4AFE9E2A909E77004B55C8 /* SwiftProtobuf in Frameworks */,
@@ -204,7 +138,6 @@
 				3F3379482A91E9C80084B7C8 /* Helpers.swift */,
 				3F4AFE4A2A909646004B55C8 /* MLModelInspect.swift */,
 				3F8854222A90A52700B37487 /* Flwr */,
-				3F4AFE542A909769004B55C8 /* CoreMLProto */,
 				3F4AFE4D2A90974E004B55C8 /* MNIST */,
 				3F3379462A91D7490084B7C8 /* MLHelper.swift */,
 			);
@@ -218,47 +151,6 @@
 				3F33794B2A91F6EF0084B7C8 /* MNIST_train.csv.lzfse */,
 			);
 			path = MNIST;
-			sourceTree = "<group>";
-		};
-		3F4AFE542A909769004B55C8 /* CoreMLProto */ = {
-			isa = PBXGroup;
-			children = (
-				3F4AFE642A90977A004B55C8 /* ArrayFeatureExtractor.pb.swift */,
-				3F4AFE562A909778004B55C8 /* AudioFeaturePrint.pb.swift */,
-				3F4AFE5B2A909779004B55C8 /* BayesianProbitRegressor.pb.swift */,
-				3F4AFE6A2A90977A004B55C8 /* CategoricalMapping.pb.swift */,
-				3F4AFE682A90977A004B55C8 /* CustomModel.pb.swift */,
-				3F4AFE572A909779004B55C8 /* DataStructures.pb.swift */,
-				3F4AFE742A90977B004B55C8 /* DictVectorizer.pb.swift */,
-				3F4AFE582A909779004B55C8 /* FeatureTypes.pb.swift */,
-				3F4AFE732A90977B004B55C8 /* FeatureVectorizer.pb.swift */,
-				3F4AFE5E2A909779004B55C8 /* Gazetteer.pb.swift */,
-				3F4AFE692A90977A004B55C8 /* GLMClassifier.pb.swift */,
-				3F4AFE702A90977A004B55C8 /* GLMRegressor.pb.swift */,
-				3F4AFE652A90977A004B55C8 /* Identity.pb.swift */,
-				3F4AFE632A909779004B55C8 /* Imputer.pb.swift */,
-				3F4AFE592A909779004B55C8 /* ItemSimilarityRecommender.pb.swift */,
-				3F4AFE612A909779004B55C8 /* LICENSE.txt */,
-				3F4AFE752A90977B004B55C8 /* LinkedModel.pb.swift */,
-				3F4AFE5A2A909779004B55C8 /* MIL.pb.swift */,
-				3F4AFE672A90977A004B55C8 /* Model.pb.swift */,
-				3F4AFE662A90977A004B55C8 /* NearestNeighbors.pb.swift */,
-				3F4AFE6B2A90977A004B55C8 /* NeuralNetwork.pb.swift */,
-				3F4AFE6E2A90977A004B55C8 /* NonMaximumSuppression.pb.swift */,
-				3F4AFE6C2A90977A004B55C8 /* Normalizer.pb.swift */,
-				3F4AFE712A90977A004B55C8 /* OneHotEncoder.pb.swift */,
-				3F4AFE6D2A90977A004B55C8 /* Parameters.pb.swift */,
-				3F4AFE6F2A90977A004B55C8 /* README.rst */,
-				3F4AFE552A909778004B55C8 /* Scaler.pb.swift */,
-				3F4AFE722A90977B004B55C8 /* SoundAnalysisPreprocessing.pb.swift */,
-				3F4AFE762A90977B004B55C8 /* SVM.pb.swift */,
-				3F4AFE5F2A909779004B55C8 /* TextClassifier.pb.swift */,
-				3F4AFE622A909779004B55C8 /* TreeEnsemble.pb.swift */,
-				3F4AFE5C2A909779004B55C8 /* VisionFeaturePrint.pb.swift */,
-				3F4AFE602A909779004B55C8 /* WordEmbedding.pb.swift */,
-				3F4AFE5D2A909779004B55C8 /* WordTagger.pb.swift */,
-			);
-			path = CoreMLProto;
 			sourceTree = "<group>";
 		};
 		3F8854222A90A52700B37487 /* Flwr */ = {
@@ -372,6 +264,7 @@
 				3F4AFE422A906BAF004B55C8 /* NIOCore */,
 				3F4AFE442A906BAF004B55C8 /* NIOPosix */,
 				3F4AFE9D2A909E77004B55C8 /* SwiftProtobuf */,
+				3F936A292AA97464002496C5 /* CoreMLProto */,
 			);
 			productName = Runner;
 			productReference = 97C146EE1CF9000F007C117D /* Runner.app */;
@@ -408,6 +301,7 @@
 			packageReferences = (
 				3F4AFE412A906BAF004B55C8 /* XCRemoteSwiftPackageReference "swift-nio" */,
 				3F4AFE9C2A909E77004B55C8 /* XCRemoteSwiftPackageReference "swift-protobuf" */,
+				3F936A282AA97464002496C5 /* XCRemoteSwiftPackageReference "CoreMLProto" */,
 			);
 			productRefGroup = 97C146EF1CF9000F007C117D /* Products */;
 			projectDirPath = "";
@@ -433,8 +327,6 @@
 			files = (
 				97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */,
 				3F33794E2A91F6EF0084B7C8 /* MNIST_train.csv.lzfse in Resources */,
-				3F4AFE912A90977B004B55C8 /* README.rst in Resources */,
-				3F4AFE832A90977B004B55C8 /* LICENSE.txt in Resources */,
 				3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */,
 				97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */,
 				97C146FC1CF9000F007C117D /* Main.storyboard in Resources */,
@@ -552,46 +444,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F4AFE842A90977B004B55C8 /* TreeEnsemble.pb.swift in Sources */,
-				3F4AFE972A90977B004B55C8 /* LinkedModel.pb.swift in Sources */,
-				3F4AFE852A90977B004B55C8 /* Imputer.pb.swift in Sources */,
-				3F4AFE8B2A90977B004B55C8 /* GLMClassifier.pb.swift in Sources */,
-				3F4AFE892A90977B004B55C8 /* Model.pb.swift in Sources */,
-				3F4AFE7D2A90977B004B55C8 /* BayesianProbitRegressor.pb.swift in Sources */,
-				3F4AFE782A90977B004B55C8 /* AudioFeaturePrint.pb.swift in Sources */,
-				3F4AFE7A2A90977B004B55C8 /* FeatureTypes.pb.swift in Sources */,
-				3F4AFE962A90977B004B55C8 /* DictVectorizer.pb.swift in Sources */,
-				3F4AFE8A2A90977B004B55C8 /* CustomModel.pb.swift in Sources */,
 				3F3379472A91D7490084B7C8 /* MLHelper.swift in Sources */,
 				3F8854212A90A52200B37487 /* MLFlwrClientModel.swift in Sources */,
-				3F4AFE7B2A90977B004B55C8 /* ItemSimilarityRecommender.pb.swift in Sources */,
-				3F4AFE882A90977B004B55C8 /* NearestNeighbors.pb.swift in Sources */,
 				3F8854242A90A53400B37487 /* MLClient.swift in Sources */,
-				3F4AFE7F2A90977B004B55C8 /* WordTagger.pb.swift in Sources */,
-				3F4AFE982A90977B004B55C8 /* SVM.pb.swift in Sources */,
-				3F4AFE902A90977B004B55C8 /* NonMaximumSuppression.pb.swift in Sources */,
-				3F4AFE922A90977B004B55C8 /* GLMRegressor.pb.swift in Sources */,
 				3F3379492A91E9C80084B7C8 /* Helpers.swift in Sources */,
-				3F4AFE862A90977B004B55C8 /* ArrayFeatureExtractor.pb.swift in Sources */,
-				3F4AFE812A90977B004B55C8 /* TextClassifier.pb.swift in Sources */,
-				3F4AFE932A90977B004B55C8 /* OneHotEncoder.pb.swift in Sources */,
-				3F4AFE792A90977B004B55C8 /* DataStructures.pb.swift in Sources */,
 				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
-				3F4AFE8F2A90977B004B55C8 /* Parameters.pb.swift in Sources */,
-				3F4AFE8E2A90977B004B55C8 /* Normalizer.pb.swift in Sources */,
-				3F4AFE942A90977B004B55C8 /* SoundAnalysisPreprocessing.pb.swift in Sources */,
-				3F4AFE8C2A90977B004B55C8 /* CategoricalMapping.pb.swift in Sources */,
-				3F4AFE802A90977B004B55C8 /* Gazetteer.pb.swift in Sources */,
-				3F4AFE772A90977B004B55C8 /* Scaler.pb.swift in Sources */,
 				3F4AFE4B2A909646004B55C8 /* MLModelInspect.swift in Sources */,
-				3F4AFE952A90977B004B55C8 /* FeatureVectorizer.pb.swift in Sources */,
-				3F4AFE872A90977B004B55C8 /* Identity.pb.swift in Sources */,
-				3F4AFE7C2A90977B004B55C8 /* MIL.pb.swift in Sources */,
 				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
 				3F4AFE3E2A90656F004B55C8 /* DataLoader.swift in Sources */,
-				3F4AFE822A90977B004B55C8 /* WordEmbedding.pb.swift in Sources */,
-				3F4AFE8D2A90977B004B55C8 /* NeuralNetwork.pb.swift in Sources */,
-				3F4AFE7E2A90977B004B55C8 /* VisionFeaturePrint.pb.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -951,6 +811,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		3F936A282AA97464002496C5 /* XCRemoteSwiftPackageReference "CoreMLProto" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SichangHe/CoreMLProto";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -968,6 +836,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3F4AFE9C2A909E77004B55C8 /* XCRemoteSwiftPackageReference "swift-protobuf" */;
 			productName = SwiftProtobuf;
+		};
+		3F936A292AA97464002496C5 /* CoreMLProto */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F936A282AA97464002496C5 /* XCRemoteSwiftPackageReference "CoreMLProto" */;
+			productName = CoreMLProto;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

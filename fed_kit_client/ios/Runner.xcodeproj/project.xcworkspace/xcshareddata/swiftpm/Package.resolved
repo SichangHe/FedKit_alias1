@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "coremlproto",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SichangHe/CoreMLProto",
+      "state" : {
+        "branch" : "main",
+        "revision" : "54783064ddebd73d4a0dda2181a3819899bf9364"
+      }
+    },
+    {
       "identity" : "swift-atomics",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-atomics.git",
